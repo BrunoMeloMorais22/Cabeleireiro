@@ -105,3 +105,39 @@ a > button{
     background: rgb(197, 196, 196);
     border-radius: 20px;
 }
+
+#depoimentos > h2{
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    background: rgb(141, 141, 141);
+    font-size: 34px;
+    text-align: center;
+}
+
+.depoimentos-site{
+    display: inline-block;
+    background: rgb(155, 155, 156);
+    height: 200px;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    width: 500px;
+    border: 7px double black;
+}
+
+.depoimentos-site > img{
+    width: 70px;
+    margin-top: 10px;
+    border-radius: 50%
+}
+
+.depoimentos-site > h2{
+    margin-top: -70px;
+    margin-left: 80px;
+}
+
+.depoimentos-site > p{
+    margin-left: 80px;
+}
+

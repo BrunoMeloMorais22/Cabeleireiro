@@ -11,13 +11,16 @@
     <form action="">
         <h1>Reserve seu horário</h1><br>
         <i class="fa-solid fa-user"></i>
-        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" ><br><br>
 
         <i class="fa-solid fa-envelope"></i>
-        <input type="email" id="email" name="email" placeholder="Digite o Email" required><br><br>
+        <input type="email" id="email" name="email" placeholder="Digite o Email" ><br><br>
         
         <i class="fa-solid fa-phone"></i>
-        <input type="tel" id="telefone" name="telefone" placeholder="Digite o telefone" required><br><br>
+        <input type="tel" id="telefone" name="telefone" placeholder="Digite o telefone"><br><br>
+        
+        <div id="feedback"></div>
+        <br>
 
         <div id="horario">
             <h2>Selecione um horário</h2><br>
@@ -51,7 +54,7 @@
 
         </div>
         <br>
-        <button>Fazer Reserva</button>
+        <button id="button-reserva" type="submit">Fazer Reserva</button>
     </form>
 
     <script src="js/reserva.js"></script>
