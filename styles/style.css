@@ -106,8 +106,12 @@ a > button{
     border-radius: 20px;
 }
 
+#depoimentos{
+    background: rgb(202, 202, 202);
+    padding: 25px;
+}
+
 #depoimentos > h2{
-    margin-top: 10px;
     padding: 10px;
     text-align: center;
     background: rgb(141, 141, 141);
@@ -119,8 +123,8 @@ a > button{
     display: inline-block;
     background: rgb(155, 155, 156);
     height: 200px;
-    margin-left: 20px;
-    padding: 10px;
+    margin-left: 100px;
+    padding: 5px;
     border-radius: 20px;
     width: 500px;
     border: 7px double black;
@@ -129,7 +133,7 @@ a > button{
 .depoimentos-site > img{
     width: 70px;
     margin-top: 10px;
-    border-radius: 50%
+    border-radius: 70%
 }
 
 .depoimentos-site > h2{
@@ -138,6 +142,14 @@ a > button{
 }
 
 .depoimentos-site > p{
+    margin-top: -10px;
     margin-left: 80px;
+}
+
+
+.rating{
+    margin-top: -30px;
+    margin-left: 300px;
+    font-size: 25px;
 }
 
