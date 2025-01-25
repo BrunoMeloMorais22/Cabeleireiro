@@ -142,14 +142,14 @@ a > button{
 }
 
 .depoimentos-site > p{
-    margin-top: -10px;
     margin-left: 80px;
 }
 
 
 .rating{
+    position: absolute;
     margin-top: -30px;
     margin-left: 300px;
-    font-size: 25px;
+    font-size: 20px;
 }
 

@@ -29,13 +29,13 @@ document.getElementById('button-reserva').addEventListener('click', function(eve
         feedback.style.color = "green"
 
         let p = document.createElement('p')
-        p.textContent = "Você será redirecionado para a página inicial em 2 segundos"
+        p.textContent = "Você será redirecionado para a página inicial em 3 segundos"
         feedback.appendChild(p)
 
 
         setTimeout(() => {
             window.location.href = 'index.html'
-        }, 2000);
+        }, 3000);
     }
 
 })
