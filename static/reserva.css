@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 420px;
+    border-radius: 20px;
+    text-align: center;
+    background: rgb(194, 193, 193);
+    padding: 15px;
+}
+
+form > input{
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid;
+    font-weight: 800;
+    font-size: 16px;
+    width: 300px;
+    text-align: center;
+}
+
+#horario > h2{
+    font-size: 32px;
+}
+
+
+#horario-manha > span{
+    padding: 5px;
+    border: 2px solid black;
+}
+
+#horario-tarde > span{
+    padding: 5px;
+    border: 2px solid black;
+}
+
+span.selecionado{
+    background: rgb(145, 144, 144);
+}
+
+span:hover{
+    cursor: pointer;
+}
+
+button{
+    margin-top: 20px;
+    width: 500px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background: rgb(3, 180, 3);
+    color: white;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button > a {
+    text-decoration: none;
+    color: white;
+}
+
+.semana{
+    font-size: 25px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/reserva.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Reserva de Horário</title>
+</head>
+<body>
+    <form action="/reserva" method="POST">
+        <h1>Reserve seu horário</h1><br>
+        <i class="fa-solid fa-user"></i>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" ><br><br>
+
+        <i class="fa-solid fa-envelope"></i>
+        <input type="email" id="email" name="email" placeholder="Digite o Email" ><br><br>
+        
+        <i class="fa-solid fa-phone"></i>
+        <input type="tel" id="telefone" name="telefone" placeholder="Digite o telefone"><br><br>
+        
+        <div id="feedback"></div>
+        <br>
+
+        <div id="horario">
+            <h2>Selecione um horário</h2><br>
+            <div id="horario-manha">
+                <h2 class="semana">Horáios de Manhã</h2><br>
+                <span id="marcar" onclick="clicar()">8:30</span>
+                <span>9:30</span>
+                <span>10:30</span>
+                <span>11:45</span><br><br><br>
+                <span>Segunda</span>
+                <span>Terça</span>
+                <span>Quarta</span>
+                <span>Quinta</span>
+                <span>Sexta</span>
+                <span>Sábado</span><br><br>
+            </div>
+
+            <div id="horario-tarde">
+                <h2 class="semana">Horáios a Tarde</h2><br>
+                <span>12:30</span>
+                <span>14:30</span>
+                <span>15:30</span>
+                <span>16:30</span><br><br><br>
+                <span>Segunda</span>
+                <span>Terça</span>
+                <span>Quarta</span>
+                <span>Quinta</span>
+                <span>Sexta</span>
+                <span>Sábado</span><br><br>
+            </div>
+
+        </div>
+        <br>
+        <button id="button-reserva" type="submit">Fazer Reserva</button>
+    </form>
+
+    <script src="/js/reserva.js"></script>
+</body>
+</html>

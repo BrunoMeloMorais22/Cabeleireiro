@@ -1,0 +1,42 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+    margin-top: 150px;
+    text-align: center;
+}
+
+header{
+    display: inline-block;
+    margin-left: 430px;
+    padding: 10px;
+    background: rgb(55, 245, 55);
+    border: 2px solid green;
+}
+
+header > p{
+    font-weight: 900;
+}
+
+#contato{
+    font-size: 20px;
+}
+
+header > button {
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background: rgb(66, 204, 66);
+}
+
+button > a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
