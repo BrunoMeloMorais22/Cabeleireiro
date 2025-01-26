@@ -12,9 +12,30 @@ form {
     margin-left: 450px;
     padding: 15px;
     border-radius: 20px;
-    background: rgb(122, 122, 122);
+    background: rgb(182, 180, 180);
     text-align: center;
 }
+
+@media (max-width: 678px){
+    form{
+        display: inline-block;
+        margin-left: 20px;
+        padding: 5px;
+        width: 90%;
+        background: rgb(187, 186, 186);
+    }
+
+    form > input{
+        font-size: 14px;
+        padding: 3px;
+    }
+
+    form > button {
+        padding: 3px;
+        width: 200px;
+    }
+}
+
 
 form > input{
     font-size: 17px;
