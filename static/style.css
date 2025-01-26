@@ -161,6 +161,42 @@ a > button{
     margin-left: 80px;
 }
 
+@media (max-width: 678px){
+    #depoimentos{
+        padding: 15px;
+    }
+
+    .depoimentos-site{
+        display: block; 
+        width: 90%;
+        margin: 10px auto; 
+        padding: 15px;
+        background: rgb(155, 155, 156);
+        height: auto; 
+        border-radius: 15px;
+        border: 5px solid black;
+    }
+
+    .depoimentos-site > img{
+        width: 50px; 
+        margin-top: 10px;
+        border-radius: 50%; 
+        margin-left: 0; 
+    }
+
+    .depoimentos-site > h2,
+    .depoimentos-site > p{
+        text-align: center; 
+        margin-left: 0; 
+    }
+
+    .rating{
+        margin-top: 10px;
+        text-align: center; 
+        font-size: 18px;
+    }
+}
+
 
 .rating{
     position: absolute;

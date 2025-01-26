@@ -8,13 +8,15 @@
 </head>
 <body>
 
-    <form action="/perfil" method="POST">
+    <form id="myPerfil" action="/perfil" method="POST">
         <h2>Crie o seu perfil</h2>
         <p>Preencha os espaços para criar o seu perfil</p><br>
-        <input type="text" id="nome" name="nome" placeholder="Nome"><br><br>
-        <input type="email" id="email" name="email" placeholder="Email"><br><br>
-        <button>Criar Perfil</button>
-    </form>
+        <input type="text" id="nome" name="nome" placeholder="Nome" required><br><br>
+        <input type="email" id="email" name="email" placeholder="Email" required><br><br>
 
+        <div id="feedbackperil"></div><br><br>
+        <button type="submit">Criar Perfil</button>
+    </form>
+    <script src="/js/perfil.js"></script>
 </body>
 </html>

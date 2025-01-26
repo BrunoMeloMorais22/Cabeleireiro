@@ -48,6 +48,42 @@ span:hover{
     cursor: pointer;
 }
 
+@media (max-width: 678px){
+    form{
+        margin-left: 25px;
+        width: 90%;
+        padding: 10px;
+    }
+
+    form > input{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    button{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #horario > h2{
+        font-size: 24px;
+    }
+
+    .semana{
+        font-size: 20px;
+    }
+
+    #horario-manha > span{
+        font-size: 14px;
+        padding: 3px;
+    }
+
+    #horario-tarde > span{
+        font-size: 14px;
+        padding: 3px;
+    }
+}
+
 button{
     margin-top: 20px;
     width: 500px;
