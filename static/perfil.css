@@ -25,6 +25,10 @@ form {
         background: rgb(187, 186, 186);
     }
 
+    form > h2{
+        margin-top: 10px;
+    }
+
     form > input{
         font-size: 14px;
         padding: 3px;

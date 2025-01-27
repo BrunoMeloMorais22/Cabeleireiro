@@ -10,7 +10,7 @@ def index():
 def perfil():
     if request.method == "POST":
         nome = request.form.get('nome')
-        email = request.form.get('email')
+        email = request.form.get('email')       
         return redirect(url_for('index02', nome=nome, email=email))
     return render_template('perfil.html')
 
