@@ -11,7 +11,7 @@ body{
 
 header{
     text-align: center;
-    background: #00FF00;
+    background: #30e430;
     padding: 20px;
 }
 
@@ -28,6 +28,7 @@ header > button{
     text-align: center;
     margin-top: 10px;
     padding: 5px;
+    font-size: 15px;
     border: 2px solid black;
     background: rgb(51, 245, 51);
     border-radius: 20px;
@@ -50,7 +51,7 @@ header > button > a{
 #container > h2{
     font-size: 40px;
     padding: 10px;
-    background: rgb(160, 160, 160);
+    background: rgb(4, 224, 4);
 }
 
 .cart{
@@ -95,7 +96,7 @@ a > button{
 
 #container2 > h2{
     text-align: center;
-    background: gray;
+    background: rgb(4, 224, 4);
     padding: 10px;
     font-size: 38px;
 }
@@ -130,7 +131,7 @@ a > button{
 #depoimentos > h2{
     padding: 10px;
     text-align: center;
-    background: rgb(141, 141, 141);
+    background: rgb(4, 224, 4);
     font-size: 34px;
     text-align: center;
 }

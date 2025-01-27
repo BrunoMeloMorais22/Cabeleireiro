@@ -11,12 +11,12 @@ document.getElementById('myPerfil').addEventListener('submit', function(event){
     }
 
     else{
-        feedbackperfil.textContent = "Perfil criado"
         feedbackperfil.style.color = "green"
+        feedbackperfil.textContent = "Perfil criado. Voltando ao menu principal..."
+        feedbackperfil.style.fontWeight = "800"
 
         setTimeout(() => {
-            feedbackperfil.textContent = "Voltando ao menu principal..."
-            window.location.href = "index02.html"
+            window.location.href = "/index02?nome=" + encodeURIComponent(nome) + "&email=" + encodeURIComponent(email);
         }, 2000);
     }
 
