@@ -82,6 +82,7 @@ span:hover{
     }
 
     #horario-tarde > span{
+        margin-top: 10px;
         font-size: 14px;
         padding: 3px;
     }
