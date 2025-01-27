@@ -52,7 +52,7 @@ span:hover{
     form{
         margin-left: 25px;
         width: 90%;
-        height: 700px;
+        height: 870px;
         padding: 10px;
     }
 
@@ -64,7 +64,7 @@ span:hover{
     form > button{
         width: 90%;
         font-size: 18px;
-        width: 400px;
+        width: 300px;
     }
 
     #horario > h2{
