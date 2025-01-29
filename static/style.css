@@ -196,6 +196,10 @@ a > button{
         text-align: center; 
         font-size: 18px;
     }
+
+    form > button{
+        width: 250px;
+    }
 }
 
 .descricao{
@@ -217,6 +221,8 @@ a > button{
     padding: 10px;
     background: rgb(4, 224, 4);
 }
+
+
 
 #contato-usuarios{
     background: rgb(183, 183, 184);
