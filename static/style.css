@@ -191,18 +191,12 @@ a > button{
         margin-left: 0; 
     }
 
-    .rating{
-        margin-top: 10px;
-        text-align: center; 
-        font-size: 18px;
-    }
-
-    form > button{
+    contato-usuarios> form > button{
         width: 90%;
         width: 250px;
     }
 
-    form > input{
+    contato-usuarios > form > input{
         width: 200px;
         width: 90%;
         font-size: 20px;
