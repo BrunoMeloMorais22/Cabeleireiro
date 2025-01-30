@@ -215,8 +215,9 @@ a > button{
     }
 
     contato-usuarios > form > input{
-        width: 100px;
-        width: 90%;
+        width: 50px;
+        width: 80%;
+        margin-left: -10px;
         font-size: 20px;
     }
 }
