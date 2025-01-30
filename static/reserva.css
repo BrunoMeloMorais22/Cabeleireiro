@@ -44,9 +44,25 @@ span:hover{
     border: 2px solid black;
 }
 
-span.selecionado{
-    background: rgb(145, 144, 144);
+.horario-item, .dia-item {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
 }
+
+.horario-item:hover, .dia-item:hover {
+    background-color: #1eff00;
+    color: black;
+}
+
+.selecionado {
+    color: white !important;
+}
+
 
 span:hover{
     cursor: pointer;

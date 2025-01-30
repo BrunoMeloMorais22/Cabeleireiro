@@ -17,42 +17,45 @@
         <input type="email" id="email" name="email" placeholder="Digite o Email" required><br><br>
         
         <i class="fa-solid fa-phone"></i>
-        <input type="tel" id="telefone" name="telefone" placeholder="Digite o telefone" required ><br><br>
+        <input type="tel" id="telefone" name="telefone" placeholder="Digite o telefone" required><br><br>
         
         <div id="feedback"></div>
         <br>
 
         <div id="horario">
             <h2>Selecione um horário</h2><br>
+
             <div id="horario-manha">
-                <h2 class="semana">Horáios de Manhã</h2><br>
-                <span id="marcar" onclick="clicar()">8:30</span>
-                <span>9:30</span>
-                <span>10:30</span>
-                <span>11:45</span><br><br>
-                <span>Segunda</span>
-                <span>Terça</span>
-                <span>Quarta</span>
-                <span>Quinta</span>
-                <span>Sexta</span><br><br>
-                <span>Sábado</span>
+                <h2 class="semana">Horários de Manhã</h2><br>
+                <span class="horario-item">7:30</span>
+                <span class="horario-item">8:30</span>
+                <span class="horario-item">9:30</span>
+                <span class="horario-item">10:30</span>
+                <span class="horario-item">11:45</span><br><br>
             </div><br>
 
             <div id="horario-tarde">
-                <h2 class="semana">Horáios a Tarde</h2><br>
-                <span>12:30</span>
-                <span>14:30</span>
-                <span>15:30</span>
-                <span>16:30</span><br><br>
-                <span>Segunda</span>
-                <span>Terça</span>
-                <span>Quarta</span>
-                <span>Quinta</span>
-                <span>Sexta</span><br><br>
-                <span>Sábado</span>
+                <h2 class="semana">Horários à Tarde</h2><br>
+                <span class="horario-item">12:30</span>
+                <span class="horario-item">14:30</span>
+                <span class="horario-item">15:30</span>
+                <span class="horario-item">16:30</span><br><br>
             </div>
-
         </div>
+
+        <h2>Selecione um dia</h2><br>
+        <div id="dias-semana">
+            <span class="dia-item">Segunda</span>
+            <span class="dia-item">Terça</span>
+            <span class="dia-item">Quarta</span>
+            <span class="dia-item">Quinta</span>
+            <span class="dia-item">Sexta</span>
+            <span class="dia-item">Sábado</span>
+        </div>
+
+        <input type="hidden" id="horarioSelecionado" name="horarioSelecionado">
+        <input type="hidden" id="diaSelecionado" name="diaSelecionado">
+
         <br>
         <button id="button-reserva" type="submit">Fazer Reserva</button>
     </form>
