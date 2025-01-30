@@ -211,11 +211,11 @@ a > button{
 
     contato-usuarios> form > button{
         width: 90%;
-        width: 250px;
+        width: 200px;
     }
 
     contato-usuarios > form > input{
-        width: 200px;
+        width: 100px;
         width: 90%;
         font-size: 20px;
     }
