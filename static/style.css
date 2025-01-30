@@ -25,6 +25,7 @@ header > h1{
 }
 
 header > p{
+    font-weight: 600;
     margin-top: 5px;
     font-size: 20px;
 }
@@ -80,6 +81,14 @@ a > button{
     border-radius: 5px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 17px;
+    background: rgb(2, 243, 2);
+}
+
+a > button:hover{
+    background: #2df32d;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    box-shadow: 2px 2px 2px ;
 }
 
 .cart > button:hover{
@@ -119,13 +128,6 @@ a > button{
 .promocao > p{
     text-align: center;
     font-weight: 700;
-}
-
-.promocao > button{
-    padding: 5px;
-    text-align: center;
-    background: rgb(197, 196, 196);
-    border-radius: 20px;
 }
 
 #depoimentos{
@@ -300,9 +302,10 @@ form > button{
     font-family: 'Courier New', Courier, monospace;
     font-weight: 800;
     font-size: 16px;
+    margin-left: 20px;
     border-radius: 20px;
     border: 2px solid black;
-    background: rgb(4, 224, 4);;
+    background: rgb(4, 224, 4);
 }
 
 footer{

@@ -1,17 +1,38 @@
-const toggleButton = document.getElementById("toggleDarkMode");
 
-toggleButton.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
+document.getElementById('formContato').addEventListener('submit', function(event){
+    event.preventDefault()
 
-    // Salva a preferência do usuário no navegador
-    if (document.body.classList.contains("dark-mode")) {
-        localStorage.setItem("modoEscuro", "ativado");
-    } else {
-        localStorage.setItem("modoEscuro", "desativado");
+    let nome = document.getElementById('nome').value
+    let email = document.getElementById('email').value
+    let telefone = document.getElementById('telefone').value
+
+    if(nome === "" || email === ""){
+        let p = document.createElement('p')
+        p.textContent = "Por favor, preencha todos os campos"
+        p.style.color = "red"
+        p.style.fontSize = "20px"
+        p.style.fontWeight = "900"
+        p.style.marginLeft = "20px"
+
+        document.getElementById('info').appendChild(p)
+
+        setTimeout(() => {
+            p.remove()
+        }, 2000);
     }
-});
+    else{
+        let p = document.createElement('p')
+        p.textContent = "Mensagem enviada com sucesso"
+        p.style.color = "green"
+        p.style.fontSize = "20px"
+        p.style.fontWeight = "900"
 
-// Mantém a escolha do usuário mesmo ao recarregar a página
-if (localStorage.getItem("modoEscuro") === "ativado") {
-    document.body.classList.add("dark-mode");
-}
+        document.getElementById('info').appendChild(p)
+
+        setTimeout(() => {
+            p.remove()
+            document.getElementById('formContato').reset()
+        }, 2000);
+    }
+
+})
