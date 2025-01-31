@@ -236,6 +236,7 @@ a > button:hover{
 
     form > textarea{
         width: 90%;
+        margin-left: -25px;
         width: 100px;
     }
 }
