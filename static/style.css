@@ -75,6 +75,12 @@ header > button > a{
     font-weight: 600;
 }
 
+.cart > a > button{
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 150px;
+}
+
 a > button{
     padding: 5px;
     background: rgb(180, 179, 179);
@@ -216,7 +222,7 @@ a > button:hover{
         margin-left: 0; 
     }
 
-    contato-usuarios> form > button{
+    contato-usuarios > form > button{
         width: 90%;
         width: 200px;
     }
@@ -224,8 +230,13 @@ a > button:hover{
     contato-usuarios > form > input{
         width: 50px;
         width: 80%;
-        margin-left: -10px;
+        margin-left: -20px;
         font-size: 20px;
+    }
+
+    form > textarea{
+        width: 90%;
+        width: 100px;
     }
 }
 
