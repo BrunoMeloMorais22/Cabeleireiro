@@ -1,3 +1,4 @@
+import os
 import cloudinary
 import cloudinary.uploader
 from flask import Flask, request, render_template, url_for, redirect
@@ -6,9 +7,9 @@ app = Flask(__name__)
 
 
 cloudinary.config( 
-  cloud_name = "your_cloud_name", 
-  api_key = "your_api_key", 
-  api_secret = "your_api_secret" 
+  cloud_name = os.getenv("CLOUND_NAME"), 
+  api_key = os.getenv("API_KEY"), 
+  api_secret = os.getenv("API_SECRET") 
 )
 
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
