@@ -1,17 +1,10 @@
 import os
-import cloudinary
-from cloudinary.exceptions import Error as CloudinaryError
 from flask import Flask, request, render_template, url_for, redirect
 
 app = Flask(__name__)
 
-
-cloudinary.config( 
-  cloud_name = os.getenv("CLOUD_NAME"), 
-  api_key = os.getenv("API_KEY"), 
-  api_secret = os.getenv("API_SECRET") 
-)
-
+UPLOAD_FOLDER = 'static/uploads'
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
 
 def allowed_file(filename):
@@ -42,7 +35,7 @@ def reserva():
     if request.method == "POST":
         nome = request.form.get('nome')
         email = request.form.get('email')
-        telefone = request.form.get('telefone') 
+        telefone = request.form.get('telefnoe')
         return redirect(url_for('reserva_sucesso', nome=nome, email=email, telefone=telefone))
     return render_template('reserva.html')
 
@@ -50,7 +43,7 @@ def reserva():
 def reserva_sucesso():
     nome = request.args.get('nome')
     email = request.args.get('email')
-    telefone = request.args.get('telefone')
+    telefone = request.args.get('telefnoe')
     return render_template('reserva_sucesso.html', nome=nome, email=email, telefone=telefone)
 
 @app.route('/avaliacao', methods=["GET", "POST"])
@@ -60,36 +53,26 @@ def avaliacao():
         comentario = request.form.get('comentario')
         status = request.form.get('gostou_naogostou')
 
-
         if 'imagem' not in request.files:
             return "Nenhum arquivo enviado."
-        
-        file = request.files['imagem']
 
+        file = request.files['imagem']
 
         if file.filename == '':
             return "Nenhuma imagem selecionada."
 
-
         if file and allowed_file(file.filename):
-            try:
-    
-                upload_result = cloudinary.uploader.upload(file)
-                imagem_url = upload_result['secure_url']
+            filepath = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
+            file.save(filepath)
 
-                avaliacoes.append({
-                    "imagem": imagem_url,
-                    "nome": nome,
-                    "comentario": comentario,
-                    "status": status
-                })
+        avaliacoes.append({
+            "imagem": filepath,
+            "nome": nome,
+            "comentario": comentario,
+            "status": status
+        })
 
-                return redirect(url_for('index'))
-            except CloudinaryError as e:
-                return f"Erro ao fazer upload da imagem: {e}"
-
-        return "Formato de arquivo não permitido."
-    
+        return redirect(url_for('index'))
     return render_template('avaliacao.html')
 
 if __name__ == "__main__":

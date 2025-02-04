@@ -8,14 +8,19 @@
     <title>Document</title>
 </head>
 <body>
+    <style>
+        img{
+            border-radius: 40px;
+        }
+    </style>
     <form method="POST" action="{{ url_for('avaliacao') }}" enctype="multipart/form-data">
         <h1>Faça sua avaliação</h1><br>
         <p>Preencha os campos por favor</p><br>
         <input type="text" id="nome" name="nome" placeholder="Seu Nome"><br>
         <textarea name="comentario" placeholder="Seu Comentário"></textarea><br><br>
         <input type="file" name="imagem"><br><br>
-        <input type="radio" name="gostou_naogostou" value="Gostou"> Satisfeito <br><br>
-        <input type="radio" name="gostou_naogostou" value="Não Gostou"> Não Satisfeito <br><br> 
+        <input type="radio" name="gostou_naogostou" value="Satisfeito"> Satisfeito <br><br>
+        <input type="radio" name="gostou_naogostou" value="Não Satisfeito"> Não Satisfeito<br><br> 
         <button type="submit">Enviar Avaliação</button>
     </form>
     
