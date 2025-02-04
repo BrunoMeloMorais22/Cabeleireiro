@@ -85,20 +85,31 @@
     </section>
 
     <section id="depoimentos">
-        <h2> <i class="fa-solid fa-star"></i> Avaliações <button id="criar_avaliacao"> <a href="/">Criar Avaliação</a> </button> </h2><br>
+        <h2> <i class="fa-solid fa-star"></i> Avaliações <button id="criar_avaliacao"> <a href="/avaliacao">Criar Avaliação</a> </button> </h2><br>
+
         <div class="depoimentos-site">
             <img src="/static/foto_perfil.jpg" alt="">
             <h2>Bruno Melo</h2>
             <p>Cliente Satisfeito</p><br>
             <p class="descricao">Agendei meu horário no Hair e foi super tranquilo. O site é direto, fácil de usar e sem complicações. Recomendo!</p>
         </div>
-        
         <div class="depoimentos-site">
             <img src="/static/depoimento.jpg" alt="">
             <h2>Maria Luiza</h2>
             <p>Cliente Satisfeito</p><br>
             <p class="descricao">Agendei meu horário no Hair e foi super tranquilo. O site é direto, fácil de usar e sem complicações. Recomendo!</p>
         </div>
+        <br><br>
+        {% for avaliacao in avaliacoes %}
+
+        <div class="depoimentos-site">
+            <img src="{{ avaliacao.imagem }}" alt="Foto de {{ avaliacao.nome }}">
+            <h2>{{ avaliacao.nome }}</h2>
+            <p>{{ avaliacao.status }}</p><br>
+            <p class="descricao">{{ avaliacao.comentario }}</p>
+        </div>
+
+        {% endfor %}
     </section>
 
     <section id="contato">
@@ -124,7 +135,7 @@
         </div>
     </section>
 
-    <footer> &copy; 2025 Feito por <span>Bruno Melo de Morais</span> | <a href="https://www.linkedin.com/in/bruno-morais-6b0256235/">LinkedIn</a> | <a href="https://github.com/BrunoMeloMorais22">Github</a></footer>
+    <footer> &copy; 2025 Feito por <span>Bruno Melo de Morais</span> | <a href="https://www.linkedin.com/in/bruno-morais-6b0256235/" target="_blank">LinkedIn</a> | <a href="https://github.com/BrunoMeloMorais22" target="_blank">Github</a></footer>
 
     <script src="/static/js/index.js"></script>
 </body>

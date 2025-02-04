@@ -32,7 +32,7 @@ document.getElementById('formContato').addEventListener('submit', function(event
         setTimeout(() => {
             p.remove()
             document.getElementById('formContato').reset()
-        }, 2000);
+        }, 3000);
     }
 
 })

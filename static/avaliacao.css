@@ -1,0 +1,62 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    border-radius: 20px;
+    box-shadow: 4px 2px 2px;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 500px;
+    padding: 15px;
+    background: rgb(184, 185, 184);
+    text-align: center;
+}
+
+@media (max-width: 678px){
+    form{
+        width: 90%;
+        width: 400px;
+        margin-left: 50px;
+    }
+}
+
+form > input{
+    height: 30px;
+    text-align: center;
+}
+
+#nome{
+    border: 2px solid black;
+}
+
+form > textarea{
+    border: 2px solid black;
+    margin-top: 20px;
+    padding: 35px;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+}
+
+form > button{
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid black;
+    font-size: 15px;
+    width: 200px;
+    background: rgb(2, 240, 2);
+}
+
+form > button:hover{
+    background: rgb(40, 206, 40);
+}
