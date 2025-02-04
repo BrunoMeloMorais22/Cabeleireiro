@@ -1,6 +1,6 @@
 import os
 import cloudinary
-import cloudinary.uploader
+from cloudinary.exceptions import Error as CloudinaryError
 from flask import Flask, request, render_template, url_for, redirect
 
 app = Flask(__name__)
@@ -60,31 +60,36 @@ def avaliacao():
         comentario = request.form.get('comentario')
         status = request.form.get('gostou_naogostou')
 
-        
+
         if 'imagem' not in request.files:
             return "Nenhum arquivo enviado."
         
         file = request.files['imagem']
 
-        
+
         if file.filename == '':
             return "Nenhuma imagem selecionada."
-        
+
+
         if file and allowed_file(file.filename):
-            
-            upload_result = cloudinary.uploader.upload(file)
-            imagem_url = upload_result['secure_url']
+            try:
+    
+                upload_result = cloudinary.uploader.upload(file)
+                imagem_url = upload_result['secure_url']
 
-            
-            avaliacoes.append({
-                "imagem": imagem_url,
-                "nome": nome,
-                "comentario": comentario,
-                "status": status
-            })
+                avaliacoes.append({
+                    "imagem": imagem_url,
+                    "nome": nome,
+                    "comentario": comentario,
+                    "status": status
+                })
 
-            return redirect(url_for('index'))
+                return redirect(url_for('index'))
+            except CloudinaryError as e:
+                return f"Erro ao fazer upload da imagem: {e}"
 
+        return "Formato de arquivo não permitido."
+    
     return render_template('avaliacao.html')
 
 if __name__ == "__main__":
