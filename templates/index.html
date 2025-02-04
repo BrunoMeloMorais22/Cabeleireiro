@@ -100,16 +100,6 @@
             <p class="descricao">Agendei meu horário no Hair e foi super tranquilo. O site é direto, fácil de usar e sem complicações. Recomendo!</p>
         </div>
         <br><br>
-        {% for avaliacao in avaliacoes %}
-
-        <div class="depoimentos-site">
-            <img src="{{ avaliacao.imagem }}" alt="Foto de {{ avaliacao.nome }}">
-            <h2>{{ avaliacao.nome }}</h2>
-            <p>{{ avaliacao.status }}</p><br>
-            <p class="descricao">{{ avaliacao.comentario }}</p>
-        </div>
-
-        {% endfor %}
     </section>
 
     <section id="contato">
