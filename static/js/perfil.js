@@ -19,5 +19,5 @@ document.getElementById('myPerfil').addEventListener('submit', function(event){
             window.location.href = "/index02?nome=" + encodeURIComponent(nome) + "&email=" + encodeURIComponent(email);
         }, 2000);
     }
-
 })
+
